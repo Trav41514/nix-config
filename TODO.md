@@ -9,3 +9,4 @@
 - QBT
 - Avahi
 - Tailscale
+- lm_sensors

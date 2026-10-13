@@ -32,6 +32,7 @@
     ../../system/audio.nix
 
     ../../services/ssh-server.nix
+    ../../services/tailscale.nix
 
     ../../programs/neovim.nix
     ../../programs/nh.nix
