@@ -1,0 +1,11 @@
+- Set nh environment variables
+- Set Discord user
+- Stylix
+- Move codium and kitty into user
+- Split programs into system and user
+- Samba
+- FTP
+- arr
+- QBT
+- Avahi
+- Tailscale

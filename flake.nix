@@ -1,13 +1,6 @@
 {
   description = "Dawn's Nix configuration";
 
-  nixConfig = {
-    extra-experimental-features = [
-      "nix-command"
-      "flakes"
-    ];
-  };
-
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
@@ -15,13 +8,37 @@
       ];
       imports = [
         ./hosts
+        #shells.nix
+        #formatter.nix
       ];
     };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    nixos-hardware.url = "github:nixos/nixos-hardware";
-    #sc0710.url = "github:Nakildias/sc0710";
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+    nixos-hardware = {
+      url = "github:nixos/nixos-hardware";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    sc0710 = { 
+      url = "github:Nakildias/sc0710";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixcord = {
+      url = "github:4evy/nixcord";
+      inputs.home-manager.follows = "home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixdatifier = {
+      url = "github:Muddyblack/nixdatifier";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }
