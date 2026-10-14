@@ -7,10 +7,10 @@
   environment.systemPackages = with pkgs; [
     wget
     git
-    nixd
     htop
-    
+
     # TODO: These are user packages
+    nixd
     vscodium.fhs
     kitty
     wireshark
