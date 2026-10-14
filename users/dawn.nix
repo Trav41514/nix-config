@@ -2,6 +2,9 @@
 {
   users.users.dawn = {
      isNormalUser = true;
-     extraGroups = [ "wheel" ];
+     extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
   };
 }
