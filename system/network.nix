@@ -1,7 +1,8 @@
 { config, ... }:
 {
   networking.networkmanager.enable = true;
-  
+  networking.modemmanager.enable = false;
+
   networking.nftables.enable = true;
 
   # networking.firewall.allowedTCPPorts = [ ... ];
