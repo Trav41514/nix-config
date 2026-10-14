@@ -26,13 +26,11 @@
     ../../system/common.nix
     ../../system/boot.nix
     ../../system/network.nix
-    ../../system/firewall.nix
     ../../system/desktop.nix
     ../../system/video.nix
     ../../system/audio.nix
 
     ../../services/ssh-server.nix
-    ../../services/tailscale.nix
 
     ../../programs/neovim.nix
     ../../programs/nh.nix
