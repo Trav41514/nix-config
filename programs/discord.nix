@@ -7,7 +7,11 @@
   programs.nixcord = {
     enable = true;
     user = "dawn";
-    discord.vencord.enable = true;
+    discord = {
+      openASAR.enable = true;
+      vencord.enable = true;
+      krisp.enable = true;
+    };
     config.plugins = {
       betterGifPicker.enable = true;
       characterCounter.enable = true;
