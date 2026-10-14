@@ -8,6 +8,8 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
 
+  services.avahi.enable = true;
+
   services.tailscale = {
     enable = true;
     openFirewall = true;
