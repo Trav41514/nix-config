@@ -8,6 +8,7 @@
     wget
     git
     htop
+    neovim
   ];
 
   imports = [
@@ -21,10 +22,8 @@
 
     ../../services/ssh-server.nix
 
-    ../../programs/neovim.nix
-    ../../programs/nh.nix
-
     # TODO: These are personally configured packages
+    ../../programs/nh.nix
     ../../programs/sublime-text.nix
     ../../programs/sublime-merge.nix
     ../../programs/firefox.nix
