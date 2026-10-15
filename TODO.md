@@ -60,3 +60,11 @@
     ``networking.firewall.trustedInterfaces = [config.services.tailscale.interfaceName]``
     I have verified that nftables will be managed on the fly by tailscale to do this automatically
     See: https://tailscale.com/docs/reference/netfilter-modes
+
+- OBS Studio:
+  * Verify that AV1 and GPU accelerated encoding is possible on the final system
+  * [ 80%] Building C object CMakeFiles/obs-stroke-glow-shadow.dir/src/obs-stroke-plugin.c.o
+           /build/source/src/obs-utils.c: In function 'load_shader_from_file':
+           /build/source/src/obs-utils.c:117:37: error: initialization discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]
+            char *pos = strrchr(file_name, '/');
+          cc1: all warnings being treated as errors
