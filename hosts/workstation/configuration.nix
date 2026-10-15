@@ -21,13 +21,5 @@
     ../../system/audio.nix
 
     ../../services/ssh-server.nix
-
-    # TODO: These are personally configured packages
-    ../../programs/nh.nix
-    ../../programs/sublime-text.nix
-    ../../programs/sublime-merge.nix
-    ../../programs/firefox.nix
-    ../../programs/discord.nix
-    ../../programs/nixdatifier.nix
   ];
 }

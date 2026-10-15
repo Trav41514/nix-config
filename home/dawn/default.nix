@@ -18,4 +18,13 @@
     handbrake
     audacity
   ];
+
+  imports = [
+    ./nh.nix
+    ./sublime-text.nix
+    ./sublime-merge.nix
+    ./firefox.nix
+    ./discord.nix
+    ./nixdatifier.nix
+  ];
 }
