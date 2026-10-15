@@ -12,6 +12,7 @@
     htop
     neovim
     openrazer-daemon
+    lact
   ];
 
   nixpkgs.config.permittedInsecurePackages = [

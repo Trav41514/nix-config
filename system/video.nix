@@ -1,5 +1,8 @@
 { pkgs, ... }:
 {
+  # GPU monitor
+  serviices.lact.enable = true;
+
   hardware.graphics = {
     extraPackages = with pkgs; [
       libva
