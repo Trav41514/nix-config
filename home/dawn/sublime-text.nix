@@ -5,7 +5,7 @@
     "openssl-1.1.1w"
   ];
 
-  environment.systemPackages = [
+  home.packages = [
     pkgs.sublime4
   ];
 }
