@@ -8,6 +8,7 @@
     enable = true;
     user = "dawn";
     discord = {
+      enable = true;
       openASAR.enable = true;
       vencord.enable = true;
       krisp.enable = true;
