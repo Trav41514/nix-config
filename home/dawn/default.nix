@@ -18,6 +18,7 @@
     handbrake
     audacity
     polychromatic
+    ghidra
   ];
 
   imports = [
