@@ -8,17 +8,6 @@
     wget
     git
     htop
-
-    # TODO: These are user packages
-    nixd
-    vscodium.fhs
-    kitty
-    wireshark
-    filezilla
-    steam
-    vlc
-    handbrake
-    audacity
   ];
 
   imports = [

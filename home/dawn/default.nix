@@ -1,4 +1,4 @@
-{ ... }:
+{ config, pkgs, ... }:
 {
   home.stateVersion = "26.05";
 
@@ -6,4 +6,16 @@
 
   home.username = "dawn";
   home.homeDirectory = "/home/dawn";
+
+  home.packages = with pkgs; [
+    nixd
+    vscodium.fhs
+    kitty
+    wireshark
+    filezilla
+    steam
+    vlc
+    handbrake
+    audacity
+  ];
 }
