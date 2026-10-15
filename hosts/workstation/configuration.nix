@@ -13,6 +13,10 @@
     neovim
   ];
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.1.1w"
+  ];
+
   imports = [
     ../../system/nix.nix
     ../../system/common.nix
