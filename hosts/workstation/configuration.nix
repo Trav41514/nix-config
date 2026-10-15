@@ -11,6 +11,7 @@
     git
     htop
     neovim
+    openrazer-daemon
   ];
 
   nixpkgs.config.permittedInsecurePackages = [

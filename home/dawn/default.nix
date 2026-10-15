@@ -17,6 +17,7 @@
     vlc
     handbrake
     audacity
+    polychromatic
   ];
 
   imports = [
