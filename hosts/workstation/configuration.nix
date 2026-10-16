@@ -29,5 +29,7 @@
     ../../system/audio.nix
 
     ../../services/ssh-server.nix
+
+    ../../services/immich.nix
   ];
 }
