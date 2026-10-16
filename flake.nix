@@ -27,6 +27,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     sc0710 = { 
       url = "github:Nakildias/sc0710";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -37,6 +41,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.nixpkgs-ci.follows = "nixpkgs";
       inputs.nixpkgs-packages.follows = "nixpkgs";
+      inputs.treefmt-nix.follows = "treefmt-nix";
     };
     nixdatifier = {
       url = "github:Muddyblack/nixdatifier";
