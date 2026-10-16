@@ -2,7 +2,7 @@
 {
   services.immich = {
     enable = true;
-    openFirewall = true;
+    port = 3003;
     machine-learning.enable = false;
     mediaLocation = "/var/lib/immich";
   };
